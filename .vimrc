@@ -5,6 +5,13 @@ set shiftwidth=4
 set expandtab
 set hlsearch
 
+" Enable to practice using vim without arrow keys
+" See vim anti-patterns: http://blog.sanctum.geek.nz/vim-anti-patterns/
+"noremap <Up> <nop>
+"noremap <Down> <nop>
+"noremap <Left> <nop>
+"noremap <Right> <nop>
+
 " Map w!! to simulate "sudo vim file"
 cmap w!! %!sudo tee > /dev/null %
 
