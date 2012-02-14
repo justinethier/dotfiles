@@ -1,0 +1,1 @@
+yum --disablerepo=* --enablerepo=MYREPO*
