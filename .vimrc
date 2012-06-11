@@ -23,3 +23,8 @@ if v:version >= 700
   " Enable spell check for text files
     autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
     endif
+
+" This command can fix syntax highlighting problems, 
+" but at the expense of speed...
+"noremap <F12> <Esc>:syntax sync fromstart<CR>
+"inoremap <F12> <C-o>:syntax sync fromstart<CR>
