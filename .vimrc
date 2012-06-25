@@ -28,3 +28,7 @@ if v:version >= 700
 " but at the expense of speed...
 "noremap <F12> <Esc>:syntax sync fromstart<CR>
 "inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
+" This is not a keybinding but a reminder:
+" :set paste This will prevent vim from re-tabbing your code when pasting large blocks
+" :set nopaste will disable paste mode
