@@ -8,13 +8,18 @@
 " myself...
 "
 
-" My preferred defaults for tabs and spaces
+" My preferred defaults for editing
+"set background=dark     " enable for dark terminals
+"set nowrap              " dont wrap lines
 set autoindent
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set hlsearch
+set ignorecase          " case insensitive searching
+set smartcase           " but become case sensitive if you type uppercase characters
+set smartindent         " smart auto indenting
+"set smarttab            " smart tab handling for indenting
+set tabstop=4           " number of spaces a tab counts for
+set shiftwidth=4        " spaces for autoindents
+set expandtab           " turn a tab into spaces
+set hlsearch            " highlight search results
 
 " Enable to practice using vim without arrow keys
 " See vim anti-patterns: http://blog.sanctum.geek.nz/vim-anti-patterns/
@@ -34,6 +39,14 @@ if v:version >= 700
   " Enable spell check for text files
     autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
     endif
+
+" paste mode toggle (needed when using autoindent/smartindent)
+" taken from http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+map <F10> :set paste<CR>
+map <F11> :set nopaste<CR>
+imap <F10> <C-O>:set paste<CR>
+imap <F11> <nop>
+set pastetoggle=<F11>
 
 " This command can fix syntax highlighting problems, 
 " but at the expense of speed...
