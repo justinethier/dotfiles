@@ -1,3 +1,14 @@
+"
+" Justin Ethier
+" my vimrc
+"
+" vim has a great set of defaults, the intent here 
+" is mostly to keep things simple. There is also a
+" tips section at the end, mostly as a reminder to
+" myself...
+"
+
+" My preferred defaults for tabs and spaces
 set autoindent
 set smartindent
 set tabstop=4
@@ -29,6 +40,23 @@ if v:version >= 700
 "noremap <F12> <Esc>:syntax sync fromstart<CR>
 "inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" TIPS Section
+
 " This is not a keybinding but a reminder:
 " :set paste This will prevent vim from re-tabbing your code when pasting large blocks
 " :set nopaste will disable paste mode
+
+" select lines in visual mode and
+" :sort
+
+" Run the current file you're editing. 
+" :!%
+
+" Auto-complete
+" Ctrl-N / Ctrl-P
+
+"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
