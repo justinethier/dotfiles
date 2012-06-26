@@ -1,11 +1,9 @@
 "
-" Justin Ethier
-" my vimrc
+" Justin Ethier's vimrc
 "
-" vim has a great set of defaults, the intent here 
-" is mostly to keep things simple. There is also a
-" tips section at the end, mostly as a reminder to
-" myself...
+" vim has a great set of defaults, so the intent here is to make a few 
+" simple, practical tweaks. There is also a tips section at the end to 
+" serve as a reminder to myself of several handy features...
 "
 
 " My preferred defaults for editing
