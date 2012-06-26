@@ -56,8 +56,8 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ TIPS Section """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" select lines in visual mode and sort them using
-" :sort
+" A plugin for running shell programs within vim
+" http://code.google.com/p/conque/
 
 " Identify home directory on Windows
 " :echo $HOME
@@ -67,4 +67,7 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 " Auto-complete
 " Ctrl-N / Ctrl-P
+
+" select lines in visual mode and sort them using
+" :sort
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
