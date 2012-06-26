@@ -8,7 +8,7 @@
 
 " My preferred defaults for editing
 "set background=dark     " enable for dark terminals
-"set nowrap              " dont wrap lines
+"set nowrap              " don't wrap lines
 set autoindent
 set ignorecase          " case insensitive searching
 set smartcase           " but become case sensitive if you type uppercase characters
@@ -38,8 +38,9 @@ if v:version >= 700
     autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
     endif
 
-" paste mode toggle (needed when using autoindent/smartindent)
-" taken from http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+" Paste mode toggle (needed when using autoindent/smartindent)
+" When enabled this prevents vim from re-tabbing code when pasting large blocks
+" From http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
 map <F10> :set paste<CR>
 map <F11> :set nopaste<CR>
 imap <F10> <C-O>:set paste<CR>
@@ -52,22 +53,18 @@ noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" TIPS Section
-
-" This is not a keybinding but a reminder:
-" :set paste This will prevent vim from re-tabbing your code when pasting large blocks
-" :set nopaste will disable paste mode
-
-" select lines in visual mode and
+""" TIPS Section """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" select lines in visual mode and sort them using
 " :sort
+
+" Identify home directory on Windows
+" :echo $HOME
 
 " Run the current file you're editing. 
 " :!%
 
 " Auto-complete
 " Ctrl-N / Ctrl-P
-
-"""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
