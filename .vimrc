@@ -70,4 +70,8 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 " select lines in visual mode and sort them using
 " :sort
+
+" A reminder of one way of placing quotes around a target regex
+" See also http://vimregex.com/#backreferences
+" %s/assert-equal /([0-9]\.[0-9]*\) /assert-equal "\1" /
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
