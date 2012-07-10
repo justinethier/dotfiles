@@ -19,6 +19,10 @@ set shiftwidth=4        " spaces for autoindents
 set expandtab           " turn a tab into spaces
 set hlsearch            " highlight search results
 
+" Disabled since this is only available in vim 7.3+
+"set relativenumber      " change line number col to display how far away each
+"                        " line is from the current one, instead of absolute #
+
 " Enable to practice using vim without arrow keys
 " See vim anti-patterns: http://blog.sanctum.geek.nz/vim-anti-patterns/
 "noremap <Up> <nop>
