@@ -60,6 +60,19 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ TIPS Section """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"" 'Tab' completion overview from 
+"" http://robots.thoughtbot.com/post/27041742805/vim-you-complete-me
+"" key  description
+"" ^P	basic tab completion, pulling from a variety of sources
+"" ^N	the same as ^P but backward
+"" ^X ^L	whole line completion
+"" ^X ^O	syntax-aware omnicompletion
+""
+"" Can use this mapping to remap completion to tab:
+" imap <Tab> <C-P>
+""
+
 " A plugin for running shell programs within vim
 " http://code.google.com/p/conque/
 
