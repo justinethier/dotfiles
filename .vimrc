@@ -25,7 +25,7 @@ set hlsearch            " highlight search results
 
 " Remap esp to jj because it is easier to type
 :inoremap jj <esc>
-:inoremap <esc> <nop>
+:inoremap <esc> :echo "Type jj instead"
 
 " Make leader easy to type
 :let mapleader = ","
