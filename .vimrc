@@ -23,6 +23,9 @@ set hlsearch            " highlight search results
 "set relativenumber      " change line number col to display how far away each
 "                        " line is from the current one, instead of absolute #
 
+" Remap esp to jj because it is easier to type
+:inoremap jj <esc>
+:inoremap <esc> <nop>
 
 " Make leader easy to type
 :let mapleader = ","
