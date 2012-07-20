@@ -23,6 +23,17 @@ set hlsearch            " highlight search results
 "set relativenumber      " change line number col to display how far away each
 "                        " line is from the current one, instead of absolute #
 
+
+" Make leader easy to type
+:let mapleader = ","
+
+" Edit my Vimrc file
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+" Source (reload) my Vimrc file
+:nnoremap <leader>sv :source $MYVIMRC<cr>
+
+
 " Enable to practice using vim without arrow keys
 " See vim anti-patterns: http://blog.sanctum.geek.nz/vim-anti-patterns/
 "noremap <Up> <nop>
