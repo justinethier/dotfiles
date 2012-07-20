@@ -23,9 +23,10 @@ set hlsearch            " highlight search results
 "set relativenumber      " change line number col to display how far away each
 "                        " line is from the current one, instead of absolute #
 
+" Disabled for now, maybe will try again in the future
 " Remap esp to jj because it is easier to type
-:inoremap jj <esc>
-:inoremap <esc> :echo "Type jj instead"
+" :inoremap jj <esc>
+" :inoremap <esc> :echo "Type jj instead"
 
 " Make leader easy to type
 :let mapleader = ","
@@ -62,10 +63,10 @@ if v:version >= 700
 " Paste mode toggle (needed when using autoindent/smartindent)
 " When enabled this prevents vim from re-tabbing code when pasting large blocks
 " From http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
-map <F10> :set paste<CR>
-map <F11> :set nopaste<CR>
-imap <F10> <C-O>:set paste<CR>
-imap <F11> <nop>
+noremap <F10> :set paste<CR>
+noremap <F11> :set nopaste<CR>
+inoremap <F10> <C-O>:set paste<CR>
+inoremap <F11> <nop>
 set pastetoggle=<F11>
 
 " This command can fix syntax highlighting problems, 
