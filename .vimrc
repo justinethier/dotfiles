@@ -17,7 +17,7 @@ set smartindent         " smart auto indenting
 set tabstop=4           " number of spaces a tab counts for
 set shiftwidth=4        " spaces for autoindents
 set expandtab           " turn a tab into spaces
-set hlsearch            " highlight search results
+set hlsearch incsearch  " highlight search results
 
 " Disabled since this is only available in vim 7.3+
 "set relativenumber      " change line number col to display how far away each
