@@ -60,6 +60,10 @@ if v:version >= 700
 " Fast buffer switching
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
+" make
+:nnoremap <F6> :silent make\|redraw!\|cc<CR>
+:nnoremap <F7> :silent make install\|redraw!\|cc<CR>
+
 " Paste mode toggle (needed when using autoindent/smartindent)
 " When enabled this prevents vim from re-tabbing code when pasting large blocks
 " From http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
