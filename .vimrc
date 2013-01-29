@@ -78,6 +78,11 @@ set pastetoggle=<F11>
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
+" Syntax highlighting
+"
+" Normally this is already taken care of, but some filetypes are too
+" obscure to have default highlighting applied to them.
+au BufReadPost *.sld set syntax=scheme
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ TIPS Section """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
