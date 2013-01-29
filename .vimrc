@@ -83,6 +83,7 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 " Normally this is already taken care of, but some filetypes are too
 " obscure to have default highlighting applied to them.
 au BufReadPost *.sld set syntax=scheme
+au BufReadPost *.scheme set syntax=scheme
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ TIPS Section """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
