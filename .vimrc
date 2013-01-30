@@ -45,6 +45,10 @@ set hlsearch incsearch  " highlight search results
 "noremap <Left> <nop>
 "noremap <Right> <nop>
 
+" Map K to split  lines; opposite of J to join lines
+" From: http://stackoverflow.com/questions/624821/vim-split-line-command
+:nnoremap K i<CR><Esc>
+
 " Map w!! to simulate "sudo vim file"
 cmap w!! %!sudo tee > /dev/null %
 
