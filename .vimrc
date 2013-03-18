@@ -61,12 +61,17 @@ if v:version >= 700
     autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
     endif
 
+" Navigate within copen window
+:nnoremap <F2> :cp<CR>
+:nnoremap <F3> :cn<CR>
+
 " Fast buffer switching
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " make
-:nnoremap <F6> :silent make\|redraw!\|cc<CR>
-:nnoremap <F7> :silent make install\|redraw!\|cc<CR>
+:nnoremap <F6> :make<CR>
+":nnoremap <F6> :silent make\|redraw!\|cc<CR>
+":nnoremap <F7> :silent make install\|redraw!\|cc<CR>
 
 " Paste mode toggle (needed when using autoindent/smartindent)
 " When enabled this prevents vim from re-tabbing code when pasting large blocks
