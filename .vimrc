@@ -28,7 +28,8 @@ set hlsearch incsearch  " highlight search results
 " NOTE gvimrc is a better place for this, but it is convenient to
 " just have one config file
 if has('gui_running')
-  set guioptions-=T  " no toolbar
+" JAE - causes more problems than it is worth...
+"  set guioptions-=T  " no toolbar
 endif
 
 " Disabled for now, maybe will try again in the future
