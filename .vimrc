@@ -103,9 +103,22 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 au BufReadPost *.sld set syntax=scheme
 au BufReadPost *.scheme set syntax=scheme
 
+" Highlight columns after 80 chars, similar to netbeans
+" requires vim >= 7.3, from:
+" http://stackoverflow.com/questions/2447109/showing-a-different-background-colour-in-vim-past-80-characters
+highlight ColorColumn ctermbg=235 guibg=#eeeeee
+" Single column at 81, ideally rows should be shorter than this
+let &colorcolumn=join(range(81,81),",")
+" A variation with warning bar at 80, Error block further out
+"let &colorcolumn="80,".join(range(120,999),",")
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ TIPS Section """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Reload vimrc without restarting vim
+" :so $MYVIMRC
 
 "" 'Tab' completion overview from 
 "" http://robots.thoughtbot.com/post/27041742805/vim-you-complete-me
