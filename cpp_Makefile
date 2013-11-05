@@ -1,0 +1,38 @@
+
+CC = g++	# Safer C
+
+COMMON_DIR = ../common
+
+CFLAGS = -Wall -Werror -I$(COMMON_DIR) -I/usr/local/include -DNDEBUG
+CXXFLAGS = -Wall -Werror -I$(COMMON_DIR) -I/usr/local/include -DNDEBUG
+
+CSRCS = lpt.c #hid.c ibios.c imodem.c message.c message-queue.c
+
+CXXSRCS = 
+
+SRCS = $(CSRCS) $(CXXSRCS)
+
+OBJS = $(CSRCS:.c=.o)
+OBJS += $(CXXSRCS:.cpp=.o)
+
+LDFLAGS =
+
+LIB = liblpt.a
+
+all: liblpt.a
+	echo "done";
+
+liblpt.a: $(OBJS)
+	$(AR) r $@ $(OBJS)
+
+clean:
+	@$(RM) .depend tags $(OBJS) $(LIB)
+
+tags: $(SRCS)
+	ctags *.h $(SRCS)
+
+.depend: $(SRCS)
+	$(COMPILE.cc) -O -M $(SRCS) > $@
+	$(MAKE)	# pull in new dependencies
+
+-include .depend
