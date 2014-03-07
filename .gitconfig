@@ -8,5 +8,5 @@
     status = auto
 [alias]
     st = status
-    br = git rev-parse --abbrev-ref HEAD
+    br = rev-parse --abbrev-ref HEAD
     co = commit
