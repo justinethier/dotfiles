@@ -9,4 +9,5 @@
 [alias]
     st = status
     br = rev-parse --abbrev-ref HEAD
-    co = commit
+    co = checkout
+    ci = commit
