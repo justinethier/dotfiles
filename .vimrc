@@ -19,6 +19,10 @@ set shiftwidth=4        " spaces for autoindents
 set expandtab           " turn a tab into spaces
 set hlsearch incsearch  " highlight search results
 
+" Show tabs, from http://vim.wikia.com/wiki/See_the_tabs_in_your_file
+set list
+set listchars=tab:>-
+
 " Disabled since this is only available in vim 7.3+
 "set relativenumber      " change line number col to display how far away each
 "                        " line is from the current one, instead of absolute #
@@ -81,6 +85,10 @@ if v:version >= 700
 :nnoremap <F6> :make<CR>
 ":nnoremap <F6> :silent make\|redraw!\|cc<CR>
 ":nnoremap <F7> :silent make install\|redraw!\|cc<CR>
+
+" turn on/off show tabs
+noremap <F7> :set list<CR>
+noremap <F8> :set nolist<CR>
 
 " Paste mode toggle (needed when using autoindent/smartindent)
 " When enabled this prevents vim from re-tabbing code when pasting large blocks
