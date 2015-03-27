@@ -14,8 +14,8 @@ set ignorecase          " case insensitive searching
 set smartcase           " but become case sensitive if you type uppercase characters
 set smartindent         " smart auto indenting
 "set smarttab            " smart tab handling for indenting
-set tabstop=4           " number of spaces a tab counts for
-set shiftwidth=4        " spaces for autoindents
+set tabstop=2           " number of spaces a tab counts for
+set shiftwidth=2        " spaces for autoindents
 set expandtab           " turn a tab into spaces
 set hlsearch incsearch  " highlight search results
 
