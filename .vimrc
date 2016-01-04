@@ -69,10 +69,10 @@ cmap w!! %!sudo tee > /dev/null %
 set noerrorbells
 
 " spelling
-if v:version >= 700
-  " Enable spell check for text files
-    autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
-    endif
+"if v:version >= 700
+"  " Enable spell check for text files
+"    autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
+"    endif
 
 " Navigate within copen window
 :nnoremap <F2> :cp<CR>
