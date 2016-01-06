@@ -19,3 +19,8 @@ ORDER BY tc.table_name, kcu.column_name
    
 -- Working with ctid (unique ID for each DB row)
 SELECT MAX(ctid) FROM my_table
+
+/*
+Not SQL, but in the init file, can add this to enable syslogging of NOTICE and higher-level messages:
+PGOPTS="-c log_min_messages=info -c log_destination='syslog'"
+*/
