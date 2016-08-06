@@ -114,6 +114,8 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 au BufReadPost *.sld set syntax=scheme
 au BufReadPost *.scheme set syntax=scheme
 
+syntax on
+
 " Highlight columns after 80 chars, similar to netbeans
 " requires vim >= 7.3, from:
 " http://stackoverflow.com/questions/2447109/showing-a-different-background-colour-in-vim-past-80-characters
