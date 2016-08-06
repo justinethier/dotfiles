@@ -81,8 +81,11 @@ set noerrorbells
 " Fast buffer switching
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
+" Fast grep for word under the cursor
+map <F6> :execute "grep -r " . expand("<cword>") . " *" <Bar> cw<CR>
+
 " make
-:nnoremap <F6> :make<CR>
+":nnoremap <F6> :make<CR>
 ":nnoremap <F6> :silent make\|redraw!\|cc<CR>
 ":nnoremap <F7> :silent make install\|redraw!\|cc<CR>
 
