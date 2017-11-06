@@ -19,6 +19,8 @@ set shiftwidth=2        " spaces for autoindents
 set expandtab           " turn a tab into spaces
 set hlsearch incsearch  " highlight search results
 
+set encoding=utf-8
+
 " Show tabs, from http://vim.wikia.com/wiki/See_the_tabs_in_your_file
 set list
 set listchars=tab:>-
