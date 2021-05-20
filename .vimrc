@@ -76,6 +76,10 @@ set noerrorbells
 "    autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
 "    endif
 
+" Color of misspelled words
+" May need to be adjusted depending on terminal
+:hi SpellBad ctermfg=white
+
 " Navigate within copen window
 :nnoremap <F2> :cp<CR>
 :nnoremap <F3> :cn<CR>
