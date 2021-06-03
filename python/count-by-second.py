@@ -10,16 +10,8 @@ def getKey(line):
   return key #[:-3] # By minute, not second
 
 lines = [ \
-           "Jul 22 02:51:37 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:51:37 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:51:37 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:51:51 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:52:36 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:52:51 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:52:57 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:52:59 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:53:36 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" \
-         , "Jul 22 02:53:44 gateway acbacs: Discovery Error: APDU Timeout for 1 after waiting 10 second" ]
+           "Jul 22 02:51:37 gateway blah blah blah" \
+         , "Jul 22 02:51:37 gateway blah blah blah" ]
 
 fp = open("data.txt", "r")
 lines = fp.readlines()
