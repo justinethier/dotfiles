@@ -36,3 +36,6 @@ SELECT MAX(ctid) FROM my_table
 Not SQL, but in the init file, can add this to enable syslogging of NOTICE and higher-level messages:
 PGOPTS="-c log_min_messages=info -c log_destination='syslog'"
 */
+
+-- Convert array of integers to a zero-padded hex string
+select array_to_string(array_agg(lpad), ' ') from (select lpad(to_hex(unnest( int_array_column_name )::int), 2, '0') from my_table) a;
