@@ -1,3 +1,5 @@
+# Laravel
+
 Proof of concept to decode a Laravel 9 cookie:
 
 ```
@@ -10,4 +12,10 @@ function laravel_decode($cookie) {
   0,
   base64_decode($data->iv), $data->tag || '');
 }
+```
+
+This can also be done via `openssl` on the command line:
+
+```
+echo 'value goes here' | openssl enc -aes-256-cbc -d -K 'key as hex' -iv 'iv as hex' -a
 ```
