@@ -1,6 +1,6 @@
 [user]
-	name = "Justin Ethier"
-	email = justin.ethier@gmail.com
+    name = "Justin Ethier"
+    email = justin.ethier@gmail.com
 [core]
     editor = vim
 [color]
@@ -13,3 +13,6 @@
     br = branch
     co = checkout
     ci = commit
+    po = push origin
+#[credential]
+#    helper = store
