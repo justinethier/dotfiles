@@ -14,5 +14,6 @@
     co = checkout
     ci = commit
     po = push origin
+    cleanall = "!sh -c 'git clean -fdx && git submodule foreach --recursive git clean -fdx'"
 #[credential]
 #    helper = store
